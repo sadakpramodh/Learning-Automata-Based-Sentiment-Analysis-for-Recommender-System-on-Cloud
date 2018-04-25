@@ -1,0 +1,6 @@
+to restore
+mysql -u root -proot sentiment_analysis < sentiment.dump
+
+to dump
+
+mysqldump -u root -proot sentiment_analysis > sentiment.dump

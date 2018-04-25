@@ -1,0 +1,17 @@
+create database sentiment_analysis;
+use sentiment_analysis;
+
+create table newuser(username varchar(50),password varchar(50),contact_no varchar(15),address varchar(100),email  varchar(100));
+
+create table movies(theatre_id int,TheatorName varchar(200),address varchar(300),longitude double,latitude double);
+
+create table movies_reviews(id int,theatre_id int,productId varchar(100),productname varchar(200),summary varchar(500),text longblob);
+
+create table restaurants(restaurant_id int,RestaurantName varchar(200),address varchar(300),longitude double,latitude double);
+
+create table restaurants_reviews(id int,restaurant_id int,productId varchar(100),productname varchar(200),summary varchar(500),text longblob);
+
+create table positive_word(word varchar(200));
+create table negative_word(word varchar(200));
+
+create table feedback(username varchar(50),product_name varchar(200),feedback varchar(500));
